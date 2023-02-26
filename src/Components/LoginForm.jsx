@@ -1,38 +1,38 @@
 import React from 'react'
-import { Button, Form, Grid, Header, Image, Message, Segment } from 'semantic-ui-react'
+import { Button, Form, Grid, Header, Message, Segment } from 'semantic-ui-react'
 
 
 
 const LoginForm = () => (
-  <Grid textAlign='center' style={{ height: '100vh' }} verticalAlign='middle'>
-    <Grid.Column style={{ maxWidth: 450 }}>
 
-      <Header as='h2' color='teal' textAlign='center'>
 
-        <Image src="../public/images/logo.png" /> Log-in to your account
+    <Grid textAlign='center' style={{ height: '100vh' }} verticalAlign='middle' id="login">
+      <Grid.Column style={{ maxWidth: 450 }}>
 
-      </Header>
-      <Form size='large'>
-        <Segment stacked>
-          <Form.Input fluid icon='user' iconPosition='left' placeholder='E-mail address' />
-          <Form.Input
-            fluid
-            icon='lock'
-            iconPosition='left'
-            placeholder='Password'
-            type='password'
-          />
+        <Form size='large'>
+          <Segment stacked>
+            <Header as='h2' color='blue' textAlign='center'> Login to your account</Header>
 
-          <Button color='teal' fluid size='large'>
-            Login
-          </Button>
-        </Segment>
-      </Form>
-      <Message>
-        New to us? <a href='#'>Sign Up</a>
-      </Message>
-    </Grid.Column>
-  </Grid>
+            <Form.Input fluid icon='user' iconPosition='left' placeholder='E-mail address' />
+            <Form.Input
+              fluid
+              icon='lock'
+              iconPosition='left'
+              placeholder='Password'
+              type='password'
+            />
+
+            <Button color='blue' fluid size='large'>
+              Login
+            </Button>
+          </Segment>
+        </Form>
+        <Message>
+          <p>Don't Have Account </p> 
+          <a href='https://www.gmail.com'>Sign Up</a>
+        </Message>
+      </Grid.Column>
+    </Grid>
 )
 
 export default LoginForm

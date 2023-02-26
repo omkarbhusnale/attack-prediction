@@ -1,22 +1,26 @@
 
 import React from 'react'
+import banner from "../images/img1.jpg"
 
 import {
+  Container,
   Grid,
   Header,
   Image,
   Segment,
 } from 'semantic-ui-react'
 
-import Footer from './Footer'
 import ResponsiveContainer from './ResponsiveContainer';
-
+import BarChart from './BarChart';
+import LoginForm from './LoginForm';
+import HistogramPlot from './HistogramPlot';
+import Footer from './Footer'
 
 
 const HomePage = () => (
   <ResponsiveContainer>
+  
     <Segment style={{ padding: '8em 0em' }} vertical>
-
       <Grid container stackable verticalAlign='middle'>
         <Grid.Row>
           <Grid.Column width={8}>
@@ -32,18 +36,26 @@ const HomePage = () => (
               We Want To Make Our Clients Secure.
             </Header>
             <p style={{ fontSize: '1.33em' }}>
-              ipsum
+              
             </p>
           </Grid.Column>
           <Grid.Column floated='right' width={6}>
-            <Image bordered rounded size='large' src='src/images/img1.jpg' />
+            <Image bordered rounded size='large' src={banner} />
           </Grid.Column>
         </Grid.Row>
       </Grid>
     </Segment>
 
+    <Container>
+      <HistogramPlot />
+      <BarChart />
+    </Container>
 
-      <Footer />
+
+    <LoginForm />
+
+
+    <Footer />
    
   </ResponsiveContainer>
 )

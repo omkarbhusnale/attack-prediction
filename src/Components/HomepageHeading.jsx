@@ -1,6 +1,8 @@
 
 import PropTypes from 'prop-types'
 import React from 'react'
+import { Link } from "react-router-dom";
+
 
 import {
   Button,
@@ -8,6 +10,7 @@ import {
   Header,
   Icon,
 } from 'semantic-ui-react'
+import LoginForm from './LoginForm';
 
 
 
@@ -15,7 +18,7 @@ const HomepageHeading = ({ mobile }) => (
     <Container text>
       <Header
         as='h1'
-        content='Vulnerabilty Prediction'
+        content='Cyber Attack Prediction'
         inverted
         style={{
           fontSize: mobile ? '2em' : '4em',
@@ -35,11 +38,13 @@ const HomepageHeading = ({ mobile }) => (
           marginTop: mobile ? '0.5em' : '1.5em',
         }}
       />
-      <Button primary size='huge'>
-        Predict For Your Organisation 
-        &nbsp;
-        <Icon name='down arrow' />
-      </Button>
+      <Link to="/login">
+        <Button as='a' primary size='huge'>
+          Predict For Your Organisation &nbsp;
+          <Icon name='down arrow' />
+        </Button>
+      </Link>
+      
     </Container>
 )
   

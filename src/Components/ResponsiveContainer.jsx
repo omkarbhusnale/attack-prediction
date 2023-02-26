@@ -2,7 +2,6 @@
 import { createMedia } from '@artsy/fresnel'
 import PropTypes from 'prop-types'
 import React, { Component } from 'react'
-import { useNavigate } from "react-router-dom";
 
 
 import {
@@ -15,15 +14,8 @@ import {
   Sidebar,
   Visibility,
 } from 'semantic-ui-react'
-import LoginForm from './LoginForm'
 
-function LoginLayout(){
-    const navigate = useNavigate(); 
-    const routeChange = () =>{ 
-        navigate({LoginForm});
-    }
 
-}
 
 const { MediaContextProvider, Media } = createMedia({
     breakpoints: {
@@ -39,7 +31,7 @@ const { MediaContextProvider, Media } = createMedia({
     <Container text>
       <Header
         as='h1'
-        content='Vulnerabilty Prediction'
+        content='Cyber Attack Prediction'
         inverted
         style={{
           fontSize: mobile ? '2em' : '4em',
@@ -168,11 +160,11 @@ const { MediaContextProvider, Media } = createMedia({
                     <Menu.Item onClick={this.handleToggle}>
                       <Icon name='sidebar' />
                     </Menu.Item>
-                    <Menu.Item position='right'>
-                      <Button as='a' inverted>
-                        Log in
-                      </Button>
-                    </Menu.Item>
+                        <Menu.Item position='right'>
+                            <Button as='button' inverted>
+                              Log in
+                            </Button>
+                        </ Menu.Item>
                   </Menu>
                 </Container>
                 <HomepageHeading mobile />
