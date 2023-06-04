@@ -1,0 +1,87 @@
+[
+    {
+      "id": 1,
+      "name": "DOS",
+      "severity": "High",
+      "CVE" : "CVE-1001",
+      "duration" : 10000
+    },  
+    {
+      "id": 2,
+      "name": "Fuzzers",
+      "severity": "Low",
+      "CVE" : "CVE-4201",
+      "duration" : 5000
+
+    },
+    {
+      "id": 3,
+      "name": "Payload",
+      "severity": "High",
+      "CVE" : "CVE-865",
+      "duration" : 65000
+    },
+    {
+      "id": 4,
+      "name": "U2R",
+      "severity" : "Medium",
+      "CVE" : "CVE-411",
+      "duration" : 84500
+    },
+    {
+      "id": 5,
+      "name": "DDoS",
+      "severity" : "High",
+      "CVE" : "CVE-461",
+      "duration" : 10400
+    },
+    {
+      "id": 6,
+      "name": "Worms",
+      "severity" : "Medium",
+      "CVE" : "CVE-972",
+      "duration" : 76500
+    },
+    {
+      "id": 7,
+      "name": "Backdoors",
+      "severity" : "Low",
+      "CVE" : "CVE-123"
+    },
+    {
+      "id": 8,
+      "name": "Execution",
+      "severity" : "High",
+      "CVE" : "CVE-763"
+    },
+    {
+      "id": 9,
+      "name": "Exploit DB",
+      "severity" : "Medium",
+      "CVE" : "CVE-225"
+    },
+    {
+      "id": 10,
+      "name": "Analysis",
+      "severity" : "Low",
+      "CVE" : "CVE-4084"
+    },
+    {
+      "id": 11,
+      "name": "Generic",
+      "severity" : "Medium",
+      "CVE" : "CVE-632"
+    },
+    {
+      "id": 12,
+      "name": "Reconnaissance",
+      "severity" : "Low",
+      "CVE" : "CVE-87"
+    },
+    {
+      "id": 13,
+      "name": "Shellcode",
+      "severity" : "Medium",
+      "CVE" : "CVE-43"
+    }
+]
